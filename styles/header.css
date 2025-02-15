@@ -1,7 +1,8 @@
 header {
     color: #fff;
     height: 70px;
-    width: 93vw;
+    width: 100%; 
+    padding: 0 5%;
     z-index: 2;
     position: fixed;
     top: 0;
@@ -9,7 +10,19 @@ header {
     transform: translateX(-50%);
     display: flex;
     align-items: center;
-    border-bottom: 1px solid rgba(255, 255, 255, 0.5);
+    justify-content: space-between;
+    position: relative;
+}
+
+header::after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    width: 95%;
+    height: 1px;
+    background: rgba(255, 255, 255, 0.5);
+    transform: translateX(-50%);
 }
 
 #header-blur {
