@@ -1,0 +1,256 @@
+@import url('https://fonts.googleapis.com/css2?family=Pinyon+Script&display=swap');
+
+
+#bg-image {
+    z-index: -2;
+
+    width: 100vw;
+    height: 100vh;
+
+    position: fixed;
+    top: 0;
+    left: 0;
+
+    opacity: 60%;
+}
+
+.napoleon {
+    background: url(../images/napoleon.jpg);
+    background-repeat: no-repeat;
+    background-position: center 50%;
+    background-size: cover;
+}
+
+.wanderer {
+    background: url(../images/wanderer.png);
+    background-repeat: no-repeat;
+    background-position: center 50%;
+    background-size: cover;
+}
+
+.wanderer2 {
+    background: url(../images/wanderer2.jpg);
+    background-repeat: no-repeat;
+    background-position: center 50%;
+    background-size: cover;
+}
+
+#hero {
+    height: 100vh;
+    width: 100vw;
+    color: white;
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    padding-left: 3%;
+    position: relative;
+    margin-bottom: 300px;
+}
+
+#hero-content {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: -200px;
+}
+
+
+#time {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    width: 20vw;
+    height: 10vh;
+    position: absolute;
+    top: 20%;
+    right: 25%;
+    font-family: "Bodoni Moda", serif;
+}
+
+#clock {
+    font-size: 120px;
+    font-family: "Pinyon Script", cursive;
+}
+
+#month {
+    font-size: 35px;
+    padding-bottom: 15px;
+}
+
+#time-right {
+    font-family: "Bodoni Moda", serif;
+    line-height: 17px;
+}
+
+#creative {
+    font-size: 35px;
+    font-family: "Bodoni Moda", serif;
+    color: #edd5c2;
+}
+#designer {
+    font-size: 140px;
+    display: flex;
+    flex-direction: row;
+    font-family: "Dorsa", sans-serif;
+    letter-spacing: 4px;
+    line-height: 220px;
+    
+    p { font-size: 35px;
+        font-family: "Bodoni Moda", serif;
+        transform: translate(15px, 76px);
+    }
+}
+#developer {
+    font-size: 140px;
+    font-family: "Dorsa", sans-serif;
+    letter-spacing: 4px;
+    line-height: 220px;
+}
+#hero-about {
+    font-family: "Bodoni Moda", serif;
+    width: 70vw;
+    max-width: 600px;
+    position: absolute;
+    top: 55%;
+    right: 3%;
+    text-indent: 15vw;
+    p {
+        font-family: "Bodoni Moda", serif;
+        /* text-transform: uppercase; */
+        font-size: 30px;
+    }
+}
+
+
+@media screen and (max-width: 1200px) {
+    #hero-content {
+        margin-bottom: 0px;
+    }
+    #creative {
+        font-size: 30px;
+    }
+    #designer {
+        font-size: 100px;
+        line-height: 155px;
+        
+        p {
+            font-size: 25px;
+            transform: translate(15px, 55px);
+        }
+    }
+    #developer {
+        font-size: 100px;
+        line-height: 155px;
+    }
+    #hero-about {
+        width: 80vw;
+        top: 68%;
+        right: 5%;
+        p {
+            font-size: 25px;
+        }
+    }
+}
+
+@media screen and (max-width: 940px) {
+    #creative, #designer, #developer {
+        transform: translateY(-40px);
+    }
+    #clock {
+        font-size: 80px;
+    }
+    #month {
+        font-size: 25px;
+        padding-bottom: 7px;
+    }
+    #time-right {
+        line-height: 14px;
+    }
+    #hero-about {
+        width: 90vw;
+        max-width: 90vw;
+        top: 70%;
+        right: 3%;
+        text-indent: 30vw;
+        p {
+            font-family: "Bodoni Moda", serif;
+            font-size: 28px;
+        }
+    }
+}
+
+@media screen and (max-width: 700px) {
+    #hero-about p {
+        font-size: 20px;
+    }
+    #hero-content {
+        margin-bottom: 0px;
+    }
+    #creative {
+        font-size: 25px;
+    }
+    #designer {
+        font-size: 80px;
+        line-height: 125px;
+        
+        p {
+            font-size: 20px;
+            transform: translate(12px, 45px);
+        }
+    }
+    #developer {
+        font-size: 80px;
+        line-height: 130px;
+    }
+}
+
+@media screen and (max-width: 500px) {
+    #creative {
+        font-size: 20px;
+    }
+    #designer {
+        font-size: 60px;
+        line-height: 95px;
+        p { transform: translate(7px, 33px);
+            font-size: 18px;
+        }
+    }
+    #developer {
+        font-size: 60px;
+        line-height: 95px;
+    }
+    #time {
+        top: 20%;
+        right: 35%;
+    }
+    #hero-about p {
+        font-size: 16px;
+    }
+    .napoleon {
+        background-position: center;
+    }
+}
+
+@media screen and (max-width: 400px) {
+    #clock {
+        font-size: 50px;
+    }
+    #time-right {
+        font-size: 14px;
+    }
+    #month {
+        font-size: 24px;
+    }
+}
+
+@media screen and (min-width: 800px) {
+    .napoleon {
+        background-position: center 13%;
+    }
+}
+
+@media screen and (min-width: 1200px) {
+    .wanderer {
+        background-position: center 45%;
+    }
+}
+

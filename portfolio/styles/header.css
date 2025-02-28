@@ -1,0 +1,127 @@
+header {
+    color: #fff;
+    height: 70px;
+    width: 100%; 
+    padding: 0 5%;
+    z-index: 2;
+    position: fixed;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: relative;
+}
+
+header::after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    width: 95%;
+    height: 1px;
+    background: rgba(255, 255, 255, 0.5);
+    transform: translateX(-50%);
+}
+
+#header-blur {
+    height: 70px;
+    width: 100vw;
+    z-index: 1;
+    position: fixed;
+    top: 0;
+    left: 0;
+}
+
+#name {
+    font-family: "Bodoni Moda", serif;
+    font-size: 16px;
+    display: flex;
+    flex-direction: row;
+    gap: 5%;
+    height: 100%;
+    width: 60%;
+    align-items: center;
+}
+
+#header-prof {
+    font-family: Roboto, sans-serif;
+    text-transform: uppercase;
+}
+
+header nav {
+    display: flex;
+    flex-direction: row;
+    width: 40%;
+    height: 100%;
+    align-items: center;
+    justify-content: right;
+    margin-right: 10px;
+}
+
+header ul {
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+}
+
+header ul li {
+    padding: 0 3px;
+}
+
+header ul li button {
+    color: #fff;
+    text-decoration: none;
+    background: transparent;
+    border: none;
+    cursor: pointer;
+    font-size: 16px;
+    font-family: "Bodoni Moda", serif;
+    font-weight: 100;
+    letter-spacing: 1px;
+}
+
+
+.through-white {
+    position: relative;
+    display: inline-block;
+    margin: 0;
+}
+
+.through-white::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: 10px;
+    width: 0;
+    height: 1px;
+    background: white;
+    transition: all 0.7s ease;
+}
+
+.through-white:hover::after {
+    width: 100%;
+    transition: all 0.5s ease;
+}
+
+
+
+@media screen and (max-width: 650px) {
+    #name {
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: center;
+        line-height: 20px;
+    }
+    header {
+        padding: 0 4%;
+    }
+}
+
+@media screen and (max-width: 500px) {
+    #header-prof {
+        display: none;
+    }
+}
