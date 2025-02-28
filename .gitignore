@@ -1,10 +1,6 @@
 # Ignore Node.js dependencies
 node_modules/
 
-# Ignore full padlet-clone repo, but keep the built dist/ folder
-padlet-clone/
-!padlet-clone/dist/  # Allow tracking only the built files
-
 # Ignore system files
 .vscode/
 .DS_Store
