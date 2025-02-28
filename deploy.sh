@@ -3,20 +3,21 @@
 # Step 1: Remove old Portfolio and clone the latest version
 echo "Fetching latest Portfolio..."
 rm -rf portfolio
-git clone https://github.com/reinisvaravs/portfolio.git
+git clone https://github.com/YOUR_USERNAME/portfolio.git
 
 # Step 2: Remove old Padlet Clone, clone latest, and build it
 echo "Fetching latest Padlet Clone..."
 rm -rf padlet-clone
-git clone https://github.com/reinisvaravs/padlet-clone.git
+git clone https://github.com/YOUR_USERNAME/padlet-clone.git
 cd padlet-clone
 npm install
 npm run build
 cd ..
 
-# Step 3: Move built React app to the correct folder
+# Step 3: Move only the built `dist/` folder to `server/padlet-clone/`
 echo "Moving built React app..."
-rm -rf padlet-clone/dist
+rm -rf server/padlet-clone/dist
+mkdir -p server/padlet-clone  # Ensure the folder exists
 mv padlet-clone/dist server/padlet-clone/
 
 # Step 4: Commit and Push everything
