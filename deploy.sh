@@ -3,12 +3,12 @@
 # Step 1: Remove old Portfolio and clone the latest version
 echo "Fetching latest Portfolio..."
 rm -rf portfolio
-git clone https://github.com/YOUR_USERNAME/portfolio.git
+git clone https://github.com/reinisvaravs/portfolio.git
 
 # Step 2: Remove old Padlet Clone, clone latest, and build it
 echo "Fetching latest Padlet Clone..."
 rm -rf padlet-clone
-git clone https://github.com/YOUR_USERNAME/padlet-clone.git
+git clone https://github.com/reinisvaravs/padlet-clone.git
 cd padlet-clone
 npm install
 npm run build
