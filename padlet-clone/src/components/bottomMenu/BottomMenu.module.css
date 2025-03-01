@@ -1,0 +1,187 @@
+.container {
+  width: 100vw;
+  height: 55px;
+  background-color: rgb(13, 13, 43);
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  position: fixed;
+  bottom: 0;
+}
+
+.addBtn {
+  background-color: rgb(63, 63, 99);
+  border: none;
+  border-radius: 50px;
+  color: white;
+  font-size: 26px;
+  width: 35px;
+  height: 35px;
+  cursor: pointer;
+  transition: background 0.3s ease, color 0.3s ease;
+}
+
+.addBtn:hover {
+  background-color: white;
+  color: black;
+  transition: background 0.3s ease, color 0.3s ease;
+}
+
+.cardHeader {
+  width: 100%;
+  height: 65px;
+  border-radius: 20px 20px 0 0;
+  position: relative;
+}
+
+.closeButton {
+  background-color: #1a1a1a;
+  border: none;
+  border-radius: 20px;
+  color: #bbbbbb;
+  width: 45px;
+  height: 45px;
+  cursor: pointer;
+  font-size: 20px;
+  position: absolute;
+  top: 10px;
+  left: 15px;
+}
+
+.publichButton {
+  background-color: #313132;
+  border: none;
+  border-radius: 20px;
+  color: #5a5a5b;
+  width: 100px;
+  height: 45px;
+  cursor: no-drop;
+  font-size: 20px;
+  position: absolute;
+  top: 10px;
+  right: 15px;
+  transition: background 0.3s ease, cursor 0.3s ease;
+}
+
+.publichButton.active {
+  background-color: white;
+  color: black;
+  cursor: pointer;
+}
+
+.popup {
+  position: fixed;
+  right: 18px;
+  bottom: 55px;
+  width: 400px;
+  height: 400px;
+  background-color: #111111;
+  border-radius: 20px 20px 0 0;
+}
+
+.cardBody {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  width: 90%;
+  height: 290px;
+  margin: 0 5% 0 5%;
+}
+
+.nameInput {
+  background-color: transparent;
+  border: none;
+  height: 50px;
+  width: 100%;
+  outline: none;
+  color: white;
+  font-size: 20px;
+  font-weight: 900;
+}
+.nameInput::placeholder {
+  color: #888888;
+}
+.nameInput:hover::placeholder {
+  color: #b8b8b8;
+}
+.nameInput:focus {
+  outline: none;
+}
+
+.valueInput {
+  background-color: transparent;
+  border: none;
+  height: 150px;
+  width: 100%;
+  outline: none;
+  color: white;
+  font-size: 16px;
+  font-family: Arial;
+
+  resize: none;
+  overflow-wrap: break-word;
+  white-space: pre-wrap;
+}
+.valueInput::placeholder {
+  color: #888888;
+}
+.valueInput:hover::placeholder {
+  color: #b8b8b8;
+}
+.valueInput:focus {
+  outline: none;
+}
+.cardFooter {
+  width: 90%;
+  margin: 0 5% 0 5%;
+}
+
+.cardFooter > button {
+  width: 90px;
+  height: 25px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  background-color: transparent;
+  border: none;
+  border-radius: 10px;
+  gap: 7px;
+  padding: 0;
+  cursor: pointer;
+  position: relative;
+
+  div {
+    width: 13px;
+    height: 13px;
+    border-radius: 20px;
+    background-color: white;
+  }
+  p {
+    color: #b8b8b8;
+    font-size: 13px;
+  }
+}
+
+.arrow {
+  color: #656565;
+}
+
+.cardFooter > button:hover {
+  background-color: #272828;
+  p {
+    color: #ced0d4;
+  }
+}
+
+
+.colorChoice {
+  width: 180px;
+  height: 300px;
+  background-color: black;
+  position: absolute;
+  bottom: 55px;
+  left: 25px;
+  border-radius: 15px;
+}

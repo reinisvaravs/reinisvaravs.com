@@ -154,16 +154,6 @@ gsap.from("#work-karting", {
   },
 });
 
-gsap.from("#email", {
-  duration: 1,
-  x: -600,
-  scrollTrigger: {
-    trigger: "#email",
-    start: "top 90%",
-    end: "top 80%",
-    toggleActions: "play none none reverse",
-  },
-});
 gsap.from("#phone", {
   duration: 1,
   x: -600,
