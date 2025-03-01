@@ -16,14 +16,11 @@ cd ..
 
 # Step 3: Move only the built `dist/` folder to `server/padlet-clone/`
 echo "Moving built React app..."
-mkdir -p padlet-clone 
-mv padlet-clone/dist server/padlet-clone/
+rm -rf dist 
+mv padlet-clone/dist ../server
+rm -rf padlet-clone
 
-# Step 4: Delete the source code folder (optional)
-echo "Removing the source code folder..."
-rm -rf padlet-clone  # Remove the source code folder
-
-# Step 5: Commit and Push everything
+# Step 4: Commit and Push everything
 echo "Committing and pushing to GitHub..."
 git add .
 git commit -m "Auto-deploy latest versions"
