@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="icon" type="image/jpeg" href="./images/emoji2.png" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Reinis Vāravs 🤟</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bodoni+Moda:ital,opsz,wght@0,6..96,400..900;1,6..96,400..900&family=Dorsa&family=Pinyon+Script&family=Roboto:ital,wght@0,100..900;1,100..900&family=Six+Caps&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="./styles/style.css">
+    <link rel="stylesheet" href="./styles/header.css">
+    <link rel="stylesheet" href="./styles/hero.css">
+    <link rel="stylesheet" href="./styles/work.css">
+    <link rel="stylesheet" href="./styles/contacts.css">
+    <link rel="stylesheet" href="./styles/footer.css">
+</head>
+<body>
+    <div id="bg-image" class="bg wanderer2"></div>
+    <div id="cursor"></div>
+    <div id="header-blur"></div>
+    <div id="loading-screen"></div>
+
+    <header>
+        <div id="name">
+            <p>Reinis Vāravs</p>
+            <p id="header-prof">Full stack Developer</p>
+        </div>
+        <nav>
+            <ul>
+                <li><button class="projects-btn through-white">works,</li>
+                <li><button class="contacts-btn through-white">contact</button></li>
+            </ul>
+        </nav>
+    </header>
+
+    <div id="hero">
+        <div id="hero-content">
+            <div id="time">
+                <div>
+                    <p id="clock">00</p>
+                </div>
+                <div id="time-right">
+                    <p id="month">jan</p>
+                    <p>available</p>
+                    <p>for work</p>
+                </div>
+            </div>
+            <div id="creative">
+                <p>creative</p>
+            </div>
+            <div id="designer">
+                <h1 class="heroAnim">DESIGNER</h1>
+                <p class="opacityAnim">&</p>
+            </div>
+            <div id="developer">
+                <h1 class="heroAnim">DEVELOPER</h1>
+            </div>
+            <div id="hero-about">
+                <p>
+                    I'm a full-stack developer based in Latvia, specializing in React.js, Node.js, Express.js, and Firebase. I love designs that stand out. I love music, coffee and<span style="opacity: 0; font-size: 7px;">x</span>ai.<span style="opacity: 0;">.........</span>
+                </p>
+            </div>
+        </div>
+    </div>
+
+    <div class="work">
+        <div id="selected-cases-div">
+            <img src="./images/web.png" loading="eager">
+            <h1 id="selected-cases">Selected Cases</h1>
+        </div>
+        <div class="work-item">
+            <div class="work-img-div">
+                <div id="work-viedi" class="work-img" onclick="window.open('https://reinisvaravs.github.io/cafe/', `_blank`);"></div>
+                <div class="ontop-div" onclick="window.open('https://reinisvaravs.github.io/cafe/', `_blank`);">
+                    <h1>Cafe</h1>
+                </div>
+            </div>
+            <div class="work-text-div" onclick="window.open('https://reinisvaravs.github.io/cafe/', `_blank`);">
+                <h1>Cafe</h1>
+            </div>            
+        </div>
+        <div class="work-item">
+            <div class="work-img-div">
+                <div id="work-candles" class="work-img" onclick="window.open('https://reinisvaravs.github.io/restaurant/', `_blank`);"></div>
+                <div class="ontop-div" onclick="window.open('https://reinisvaravs.github.io/restaurant/', `_blank`);">
+                    <h1>Restaurant</h1>
+                </div>
+            </div>
+            <div class="work-text-div">
+                <h1 onclick="window.open('https://reinisvaravs.github.io/restaurant/', `_blank`);">Restaurant</h1>
+            </div>
+        </div>
+        <div class="work-item">
+            <div class="work-img-div">
+                <div id="work-karting" class="work-img" onclick="window.open('https://reinisvaravs.github.io/karting/', `_blank`);"></div>
+                <div class="ontop-div" onclick="window.open('https://reinisvaravs.github.io/karting/', `_blank`);">
+                    <h1>Karting Center</h1>
+                </div>
+            </div>
+            <div class="work-text-div">
+                <h1 onclick="window.open('https://reinisvaravs.github.io/karting/', `_blank`);">Karting Center</h1>
+            </div>
+        </div>
+        <div class="work-item">
+            <div class="work-img-div">
+                <div id="work-website1" class="work-img"></div>
+                <div class="ontop-div">
+                    <h1>Website</h1>
+                </div>
+            </div>
+            <div class="work-text-div">
+                <h1>Website</h1>
+            </div>
+        </div>
+        <div class="work-item">
+            <div class="work-img-div">
+                <div id="work-website2" class="work-img"></div>
+                <div class="ontop-div">
+                    <h1>Website</h1>
+                </div>
+            </div>
+            <div class="work-text-div">
+                <h1>Website</h1>
+            </div>
+        </div>
+    </div>
+
+    <section id="contacts-section">
+        <div id="contacts-container">
+            <h4 id="contacts-heading">contact.</h4>
+            <p id="sub-heading">Get in touch with me via social media or text me.</p>
+            <div id="email-div">
+                <p class="email" id="phone">phone: <a href="tel:+371 28816633" target="_blank">+371 28816633</a></p>
+                <p class="email" id="instagram">instagram: <a href="https://www.instagram.com/reinisrvaravs/" target="_blank">@reinisrvaravs</a></p>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div id="author-div">
+            <p id="author"><span id="year">year</span> Reinis R. Vāravs</p>
+        </div>
+        <div id="footer-buttons">
+            <ul><li><button class="projects-btn">works,</li>
+                <li><button class="contacts-btn">contact</button></li></ul>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/gsap.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/ScrollTrigger.min.js"></script>
+    <script src="https://unpkg.com/lenis@1.1.5/dist/lenis.min.js"></script>
+    <script src="./scripts/gsap.js"></script>
+    <script src="./scripts/script.js"></script>
+</body>
+</html>
