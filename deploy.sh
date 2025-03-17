@@ -16,8 +16,8 @@ rm -rf padlet-clone
 mv ./temp/padlet-clone ../server
 rm -rf temp
 
-git add .
-git commit -m "Auto-deploy latest versions"
-git push origin main
+# git add .
+# git commit -m "Auto-deploy latest versions"
+# git push origin main
 
 echo "✅ Deployment complete!"
