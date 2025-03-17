@@ -3,17 +3,29 @@
 rm -rf portfolio
 git clone https://github.com/reinisvaravs/portfolio.git
 
-rm -rf padlet-clone
-git clone https://github.com/reinisvaravs/padlet-clone.git
-cd padlet-clone
+rm -rf frontend-todo
+git clone https://github.com/reinisvaravs/frontend-todo.git
+cd frontend-todo
 npm install
 npm run build
 cd ..
 
-mkdir -p temp/padlet-clone
-mv padlet-clone/dist ./temp/padlet-clone
-rm -rf padlet-clone
-mv ./temp/padlet-clone ../server
+mkdir -p temp/frontend-todo
+mv frontend-todo/dist ./temp/frontend-todo
+rm -rf frontend-todo
+mv ./temp/frontend-todo ../server
+
+rm -rf frontend-ecom
+git clone https://github.com/reinisvaravs/frontend-ecom.git
+cd frontend-ecom
+npm install
+npm run build
+cd ..
+
+mkdir -p temp/frontend-ecom
+mv frontend-ecom/dist ./temp/frontend-ecom
+rm -rf frontend-ecom
+mv ./temp/frontend-ecom ../server
 rm -rf temp
 
 git add .

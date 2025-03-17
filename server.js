@@ -10,14 +10,15 @@ const __filename = fileURLToPath(import.meta.url);
 const __dirname = path.dirname(__filename);
 
 // Serve Portfolio at "/"
-app.use(express.static(path.join(__dirname, "portfolio")));
+app.use("/", express.static(path.join(__dirname, "portfolio")));
+app.use("/app", express.static(path.join(__dirname, "frontend-todo/dist")));
+app.use("/store", express.static(path.join(__dirname, "frontend-ecom/dist")));
 
-// Serve Padlet Clone React App at "/app/"
-app.use("/app", express.static(path.join(__dirname, "padlet-clone/dist")));
-
-// Ensure React Router inside Padlet Clone works
 app.get("/app/*", (req, res) => {
-  res.sendFile(path.join(__dirname, "padlet-clone/dist/index.html"));
+  res.sendFile(path.join(__dirname, "frontend-todo/dist/index.html"));
+});
+app.get("/store/*", (req, res) => {
+  res.sendFile(path.join(__dirname, "frontend-ecom/dist/index.html"));
 });
 
 // Start the server
