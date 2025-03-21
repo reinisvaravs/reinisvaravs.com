@@ -1,13 +1,10 @@
 {
-  "name": "padlet-all",
+  "name": "server_reinisvaravs_com",
   "version": "1.0.0",
   "main": "server.js",
   "type": "module",
   "scripts": {
-    "start": "node server.js",
-    "build": "npm run build:padlet && npm run build:portfolio",
-    "build:padlet": "cd padlet-clone && npm install && npm run build",
-    "build:portfolio": "cd portfolio && npm install && npm run build"
+    "start": "node server.js"
   },
   "dependencies": {
     "express": "^4.21.2",
