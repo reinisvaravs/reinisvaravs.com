@@ -10,7 +10,7 @@ const __filename = fileURLToPath(import.meta.url);
 const __dirname = path.dirname(__filename);
 
 // Serve Portfolio at "/"
-app.use("/", express.static(path.join(__dirname, "portfolio")));
+app.use("/", express.static(path.join(__dirname, "portfolio/dist")));
 app.use("/app", express.static(path.join(__dirname, "frontend-todo/dist")));
 app.use("/store", express.static(path.join(__dirname, "frontend-ecom/dist")));
 
