@@ -14,19 +14,19 @@ mv portfolio/dist ./temp/portfolio
 rm -rf portfolio
 mv ./temp/portfolio ../reinisvaravs
 
-echo "[todo] Getting it"
-rm -rf frontend-todo
-git clone https://github.com/reinisvaravs/frontend-todo.git
-cd frontend-todo
-npm install
-npm run build
-cd ..
+# echo "[todo] Getting it"
+# rm -rf frontend-todo
+# git clone https://github.com/reinisvaravs/frontend-todo.git
+# cd frontend-todo
+# npm install
+# npm run build
+# cd ..
 
-echo "[todo] Placing it in temp/"
-mkdir -p temp/frontend-todo
-mv frontend-todo/dist ./temp/frontend-todo
-rm -rf frontend-todo
-mv ./temp/frontend-todo ../reinisvaravs
+# echo "[todo] Placing it in temp/"
+# mkdir -p temp/frontend-todo
+# mv frontend-todo/dist ./temp/frontend-todo
+# rm -rf frontend-todo
+# mv ./temp/frontend-todo ../reinisvaravs
 
 echo "[ecom] Getting it"
 rm -rf frontend-ecom
