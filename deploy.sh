@@ -12,7 +12,7 @@ echo "[portfolio] Placing it in temp/"
 mkdir -p temp/portfolio
 mv portfolio/dist ./temp/portfolio
 rm -rf portfolio
-mv ./temp/portfolio ../reinisvaravs
+mv ./temp/portfolio ../test
 
 echo "[ecom] Getting it"
 rm -rf frontend-ecom
@@ -26,7 +26,7 @@ echo "[ecom] Placing it in temp/"
 mkdir -p temp/frontend-ecom
 mv frontend-ecom/dist ./temp/frontend-ecom
 rm -rf frontend-ecom
-mv ./temp/frontend-ecom ../reinisvaravs
+mv ./temp/frontend-ecom ../test
 rm -rf temp
 
 echo "[server] Pushing changes"
