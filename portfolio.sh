@@ -16,7 +16,7 @@ mv ./temp/portfolio ../reinisvaravs
 
 echo "[server] Pushing changes"
 git add .
-git commit -m "Auto-deploy latest versions"
+git commit -m "Auto-deploy latest portfolio"
 git push origin main
 
 echo "✅✅✅ Deployment complete! [portfolio only]"
